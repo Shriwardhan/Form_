@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    
+        <form id="nameForm">
+          <label for="fullName">Enter Full Name:</label>
+          <input type="text" id="fullName" placeholder="Enter your full name" required>
+          <p><label for="Aadhar">Enter your Aadhar number :</label>
+          <input type="number" id="adhar"  place holder="Enter your aadhar number" maxlength="12" required></p>
+          <p>
+            <label for="pancard">Enter your pancard number :</label>
+            <input type="text"id="pan" placeholder="Enter your PAN number" maxlength="10" required>
+          </p>
+          <p>
+            <label for="phone">Enter your mobile number :</label>
+            <input type="number"id="phone" placeholder="Enter your Mobile Number" required>
+          </p>
+          <label>Date of Birth:</label>
+          <input type="date" id="dob" class="form-control" required>
+          <p id="p5"></p>
+          <h4>Enter Marks (6 Subjects)</h4>
+            <input type="number" id="marks1" class="a" placeholder="Subject 1">
+            <input type="number" id="marks2" class="a" placeholder="Subject 2">
+            <input type="number" id="marks3" class="a" placeholder="Subject 3">
+            <input type="number" id="marks4" class="a" placeholder="Subject 4">
+            <input type="number" id="marks5" class="a" placeholder="Subject 5">
+            <input type="number" id="marks6" class="a" placeholder="Subject 6">
+            <p id="p1"></p>
+          <button type="button" onclick="done()">submit</button>
+         </div>
+        </form>
+        
+        <div id="output">
+          <h3>FORM</h3>
+          <p>First Name: <span id="firstName"></span></p>
+          <p>Middle Name: <span id="middleName"></span></p>
+          <p>Surname: <span id="surname"></span></p>
+          <P>Aadhar number :<span id="result"></span></P>
+          <p>PAN Number :<span id="panNumber"></span></p>
+          <p>Mobile Number :<span id="mobileno"></span></p>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
